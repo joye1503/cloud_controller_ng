@@ -13,6 +13,10 @@ sudo: required
 rvm:
   - 2.5.5
 
+arch:
+  - amd64
+  - arm64
+
 before_script:
   - bundle exec rake db:create
   - DB=mysql bundle exec rake parallel:create
