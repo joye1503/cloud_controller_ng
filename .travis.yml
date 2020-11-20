@@ -13,9 +13,11 @@ sudo: required
 rvm:
   - 2.5.5
 
-arch:
-  - amd64
-  - arm64
+arch: arm64-graviton2
+dist: focal
+sudo: required
+group: edge
+virt: vm
 
 before_script:
   - bundle exec rake db:create
