@@ -11,7 +11,7 @@ cache: bundler
 sudo: required
 
 rvm:
-  - 2.5.5
+  - 2.4.9
 
 arch: arm64-graviton2
 dist: focal
